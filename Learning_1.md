@@ -103,3 +103,9 @@ az aks get-credentials \
 ```bash
 kubectl create namespace ratingsapp
 ```
+
+
+# 생각해볼것
+## node 개수는 홀수로 만드는걸 권장한다고한다.
+- 예제에서는 3개의 App을 올린다. Node 갯수는 2개이다.
+- service는 3개인데, pod에 어떻게 올라갈까?
