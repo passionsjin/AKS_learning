@@ -74,6 +74,7 @@ az aks create \
 - 위 명령어를 입력하면, Quota 문제로 생성이 되지않는다.
 - 옵션에는 `standardDSv2Family`의 VM size를 지정해주지않았는데, 지정해서 다시 시도해보자.
 - ~(않히.. 4core 제한은 너무 심하자나,... 뭐하란거야)~
+- B2s size의 node를 2개 설정.
 ```bash
 az aks create \
 --resource-group $RESOURCE_GROUP \
@@ -91,4 +92,14 @@ az aks create \
 --node-vm-size Standard_B2s \
 --node-count 2
 ```
-
+## 5. 클러스터와 연결
+- 명령어를 통해 kubectl을 통해 클러스터와 연결.
+```bash
+az aks get-credentials \
+    --resource-group $RESOURCE_GROUP \
+    --name $AKS_CLUSTER_NAME
+```
+## 6. App 배포를 위한 namespace 생성
+```bash
+kubectl create namespace ratingsapp
+```
