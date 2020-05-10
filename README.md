@@ -11,5 +11,12 @@ https://docs.microsoft.com/ko-kr/learn/modules/aks-workshop 예제다루기
 - [Learning_4](Learning_4.md) 
 ## 연습 - Rating front end 배포
 - [Learning_5](Learning_5.md)
-## [Learning_6](Learning_6.md) 진행중... 
+## 연습 - Deploy an ingress for the front end 
+- [Learning_6](Learning_6.md)
 
+## 진행중
+- [Learning_7](Learning_7.md)
+## 진행중
+- [Learning_8](Learning_8.md)
+## 진행중
+- [Learning_9](Learning_9.md)
